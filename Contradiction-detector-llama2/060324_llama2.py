@@ -1,7 +1,7 @@
 import requests
 
 api_url = "https://api-inference.huggingface.co/models/meta-llama/Llama-2-70b-chat-hf"
-question = "What is the meaning of life?"
+question = "What is the meaning of life? Answer:"
 token = "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"
 
 # Definir el encabezado de autorización
@@ -20,3 +20,4 @@ if response.status_code == 200:
     print("Respuesta del modelo:", respuesta)
 else:
     print("Error al hacer la solicitud:", response.status_code)
+    
